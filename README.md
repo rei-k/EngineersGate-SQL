@@ -37,7 +37,8 @@ UPDATE `test_db`.`user` SET `name` = '鈴木 さくら', `weight` = '45' WHERE (
 DELETE FROM `sample_db`.`user` WHERE (`id` = '3');  /* 鈴木さくらのデータを削除 */
 6. MySQL Workbenchをインストールしましょう
 7. MySQL Workbenchで、作成したデータベースに接続しましょう
-8. MySQL Workbenchで、ER図を作成してみましょう
+8. MySQL Workbenchで、ER図を作成してみましょう!
+[ER Diagram](/path/to/er.jpg)
 9. 作成したER図よりCreate文を生成してみましょう
 ```sql
 CREATE TABLE IF NOT EXISTS `sample_db`.`user` (
@@ -50,4 +51,5 @@ CREATE TABLE IF NOT EXISTS `sample_db`.`user` (
 ENGINE = InnoDB
 COMMENT = 'ユーザー'
 10. MySQL WorkbenchでSNSサイトを作成する上で必要なテーブル構成を設計（ER図を作成する）してみましょう
+![SNS ER Diagram](/path/to/SNS_er.png)
 
