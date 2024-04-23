@@ -12,12 +12,14 @@ SQLオリジナル課題制作物として、下記課題を行いました。
     /* .データベース作成 */
 ```sql
 CREATE TABLE `sample_db`.`user` (
-  `id` INT NOT NULL AUTO_INCREMENT,  /* ユーザーID: 自動増加する一意の識別子 */
-  `name` VARCHAR(45) NOT NULL COMMENT '名前',  /* 名前: ユーザーの姓名を格納 */
-  `birthday` DATE NULL COMMENT '誕生日',  /* 誕生日: ユーザーの生年月日を記録 */
-  `height` INT NULL COMMENT '身長',  /* 身長: 単位はセンチメートルで記録 */
-  `weight` INT NULL COMMENT '体重',  /* 体重: 単位はキログラムで管理 */
-  PRIMARY KEY (`id`));  /* 主キー設定: `id`フィールドを主キーとして使用 */
+  `id` INT NOT NULL AUTO_INCREMENT, /* ユーザーID: 自動増加する一意の識別子 */
+  `name` VARCHAR(45) NOT NULL COMMENT '名前', /* 名前: ユーザーの姓名を格納 */
+  `birthday` DATE NULL COMMENT '誕生日', /* 誕生日: ユーザーの生年月日を記録 */
+  `height` INT NULL COMMENT '身長', /* 身長: 単位はセンチメートルで記録 */
+  `weight` INT NULL COMMENT '体重', /* 体重: 単位はキログラムで管理 */
+  PRIMARY KEY (`id`) /* 主キー設定: `id`フィールドを主キーとして使用 */
+);
+
 6. MySQL Workbenchをインストールしましょう
  レコードの登録・更新・削除 - より具体的な操作例
 7. MySQL Workbenchで、作成したデータベースに接続しましょう
