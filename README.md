@@ -23,7 +23,7 @@ CREATE TABLE `sample_db`.`user` (
   PRIMARY KEY (`id`) /* 主キー設定: `id`フィールドを主キーとして使用 */
 );
 
-
+```sql
 6. MySQL Workbenchをインストールしましょう
  レコードの登録・更新・削除 - より具体的な操作例
 7. MySQL Workbenchで、作成したデータベースに接続しましょう
