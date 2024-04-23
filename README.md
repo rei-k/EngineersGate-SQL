@@ -8,7 +8,8 @@ SQLオリジナル課題制作物として、下記課題を行いました。
 1. MySQLをインストールしましょう
 2. MySQLに接続してみましょう
 3. データベースを作成しましょう
-4. /* .データベース作成 */
+4.4. テーブルを作成しましょう
+    /* .データベース作成 */
 ```sql
 CREATE TABLE `sample_db`.`user` (
   `id` INT NOT NULL AUTO_INCREMENT,  /* ユーザーID: 自動増加する一意の識別子 */
@@ -17,8 +18,10 @@ CREATE TABLE `sample_db`.`user` (
   `height` INT NULL COMMENT '身長',  /* 身長: 単位はセンチメートルで記録 */
   `weight` INT NULL COMMENT '体重',  /* 体重: 単位はキログラムで管理 */
   PRIMARY KEY (`id`));  /* 主キー設定: `id`フィールドを主キーとして使用 */
-6. レコードの登録・更新・削除 - より具体的な操作例
-7. /* ユーザーデータの初期登録: 一括で複数のユーザー情報を挿入 */
+6. MySQL Workbenchをインストールしましょう
+ レコードの登録・更新・削除 - より具体的な操作例
+7. MySQL Workbenchで、作成したデータベースに接続しましょう
+/* ユーザーデータの初期登録: 一括で複数のユーザー情報を挿入 */
 ```sql
 INSERT INTO `sample_db`.`user` (`id`, `name`, `birthday`, `height`, `weight`)
 VALUES ('1', '山田 太郎', '2000-12-21', '170', '65'),
