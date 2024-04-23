@@ -38,7 +38,8 @@ WHERE `id` = 1;
 7. MySQL Workbenchをインストールしましょう
 8. MySQL Workbenchで、作成したデータベースに接続しましょう
 9. MySQL Workbenchで、ER図を作成してみましょう!
-```sql
+
+9. 作成したER図よりCreate文を生成してみましょう```sql
 -- countryテーブルのCREATE文
 CREATE TABLE country (
   country_id SMALLINT NOT NULL AUTO_INCREMENT,
@@ -87,5 +88,4 @@ CREATE TABLE customer (
   FOREIGN KEY (store_id) REFERENCES store (store_id)
 );
 ```
-9. 作成したER図よりCreate文を生成してみましょう
 10. MySQL WorkbenchでSNSサイトを作成する上で必要なテーブル構成を設計（ER図を作成する）してみましょう
