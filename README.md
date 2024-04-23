@@ -90,3 +90,6 @@ CREATE TABLE customer (
 );
 ```
 10. MySQL WorkbenchでSNSサイトを作成する上で必要なテーブル構成を設計（ER図を作成する）してみましょう
+(images/SNS_er.png"SNS_er.png")
+
+
