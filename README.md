@@ -38,6 +38,7 @@ WHERE `id` = 1;
 6. MySQL Workbenchをインストールしましょう
 7. MySQL Workbenchで、作成したデータベースに接続しましょう
 8. MySQL Workbenchで、ER図を作成してみましょう!
+![SNS ER Diagram](image/er.jpg "ER Diagram")
 
 9. 作成したER図よりCreate文を生成してみましょう
  ```sql
@@ -90,6 +91,6 @@ CREATE TABLE customer (
 );
 ```
 10. MySQL WorkbenchでSNSサイトを作成する上で必要なテーブル構成を設計（ER図を作成する）してみましょう
-(images/SNS_er.png"SNS_er.png")
+(image/SNS_er.png"SNS_er.png")
 
 
