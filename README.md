@@ -23,14 +23,21 @@ CREATE SCHEMA `sample_db` ;
  `birthday` DATE NULL COMMENT '誕生日', /* 誕生日: ユーザーの生年月日を記録 */
  `height` INT NULL COMMENT '身長', /* 身長: 単位はセンチメートルで記録 */
  `weight` INT NULL COMMENT '体重', /* 体重: 単位はキログラムで管理 */
-``` 5
+);
+``` 
 5. 作成したテーブルにレコードの登録・更新・削除を行ってみましょう
-7.   ```sql
-
-8. レコードを登録・更新・削除してみましょう
-9. MySQL Workbenchをインストールしましょう
-10. MySQL Workbenchで、作成したデータベースに接続しましょう
-11. MySQL Workbenchで、ER図を作成してみましょう!
+```sql
+INSERT INTO `sample_db`.`user` (`name`, `birthday`, `height`, `weight`)
+VALUES ('田中 太郎', '1990-05-21', 175, 65);
+UPDATE `sample_db`.`user`
+SET `height` = 180, `weight` = 68
+WHERE `id` = 1;
+DELETE FROM `sample_db`.`user`
+WHERE `id` = 1;
+```
+7. MySQL Workbenchをインストールしましょう
+8. MySQL Workbenchで、作成したデータベースに接続しましょう
+9. MySQL Workbenchで、ER図を作成してみましょう!
 ```sql
 -- countryテーブルのCREATE文
 CREATE TABLE country (
@@ -80,5 +87,5 @@ CREATE TABLE customer (
   FOREIGN KEY (store_id) REFERENCES store (store_id)
 );
 ```
-12. 作成したER図よりCreate文を生成してみましょう
-13. MySQL WorkbenchでSNSサイトを作成する上で必要なテーブル構成を設計（ER図を作成する）してみましょう
+9. 作成したER図よりCreate文を生成してみましょう
+10. MySQL WorkbenchでSNSサイトを作成する上で必要なテーブル構成を設計（ER図を作成する）してみましょう
