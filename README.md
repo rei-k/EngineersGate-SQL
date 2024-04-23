@@ -35,11 +35,12 @@ WHERE `id` = 1;
 DELETE FROM `sample_db`.`user`
 WHERE `id` = 1;
 ```
-7. MySQL Workbenchをインストールしましょう
-8. MySQL Workbenchで、作成したデータベースに接続しましょう
-9. MySQL Workbenchで、ER図を作成してみましょう!
+6. MySQL Workbenchをインストールしましょう
+7. MySQL Workbenchで、作成したデータベースに接続しましょう
+8. MySQL Workbenchで、ER図を作成してみましょう!
 
-9. 作成したER図よりCreate文を生成してみましょう```sql
+9. 作成したER図よりCreate文を生成してみましょう
+ ```sql
 -- countryテーブルのCREATE文
 CREATE TABLE country (
   country_id SMALLINT NOT NULL AUTO_INCREMENT,
