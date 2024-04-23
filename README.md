@@ -10,7 +10,7 @@ SQLオリジナル課題制作物として、下記課題を行いました。
 3. データベースを作成しましょう
 4.4. テーブルを作成しましょう
     /* .データベース作成 */
-```sql
+<pre>
 -- コメントはハイライトされません。
 
 /* コメントは長い説明を記述するために使用できます。 */
@@ -23,10 +23,11 @@ CREATE TABLE `sample_db`.`user` (
   PRIMARY KEY (`id`) /* 主キー設定: `id`フィールドを主キーとして使用 */
 );
 
-```sql
+<pre>
 6. MySQL Workbenchをインストールしましょう
  レコードの登録・更新・削除 - より具体的な操作例
 7. MySQL Workbenchで、作成したデータベースに接続しましょう
+    <pre>
 /* ユーザーデータの初期登録: 一括で複数のユーザー情報を挿入 */
 INSERT INTO `sample_db`.`user` (`id`, `name`, `birthday`, `height`, `weight`)
 VALUES ('1', '山田 太郎', '2000-12-21', '170', '65'),
@@ -43,11 +44,13 @@ DELETE FROM `sample_db`.`user` WHERE (`id` = '3'); /* 鈴木さくらのデー�
 
 /* ユーザーデータの削除: 不要になったデータの安全な削除 */
 DELETE FROM `sample_db`.`user` WHERE (`id` = '3');  /* 鈴木さくらのデータを削除 */
+        <pre>
 6. MySQL Workbenchをインストールしましょう
 7. MySQL Workbenchで、作成したデータベースに接続しましょう
 8. MySQL Workbenchで、ER図を作成してみましょう!
 [ER Diagram](/path/to/er.jpg)
 9. 作成したER図よりCreate文を生成してみましょう
+<pre>
 ```sql
 CREATE TABLE IF NOT EXISTS `sample_db`.`user` (
   `id` INT NOT NULL COMMENT 'ID',
@@ -58,6 +61,7 @@ CREATE TABLE IF NOT EXISTS `sample_db`.`user` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 COMMENT = 'ユーザー'
+    <pre>
 10. MySQL WorkbenchでSNSサイトを作成する上で必要なテーブル構成を設計（ER図を作成する）してみましょう
 ![SNS ER Diagram](/path/to/SNS_er.png)
 
